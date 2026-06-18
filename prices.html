@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prețuri | Pixel Art Photography</title>
+
+    <meta name="description"
+        content="Pachete de prețuri pentru fotografie profesională: nunți, evenimente și ședințe foto.">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Pixel Art</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Acasă</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portofoliu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Servicii</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Despre</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="prices.html">Prețuri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="container text-center text-white">
+        <h1>Pachete și Prețuri</h1>
+        <p>Alege oferta potrivită pentru evenimentul tău</p>
+    </div>
+</section>
+
+<!-- PRICING -->
+<section class="container pb-5">
+
+    <div class="row">
+
+        <!-- BASIC -->
+        <div class="col-md-4 mb-4">
+            <div class="price-card text-center p-4">
+                <h3>Basic</h3>
+                <h2 class="my-3">150€</h2>
+
+                <ul class="list-unstyled">
+                    <li>✔ Ședință foto 1 oră</li>
+                    <li>✔ 20 fotografii editate</li>
+                    <li>✔ Livrare online</li>
+                    <li>✔ 1 locație</li>
+                </ul>
+
+                <a href="#" class="btn btn-outline-light mt-3" onclick="openModal('Basic')">
+                    Alege pachetul
+                </a>
+            </div>
+        </div>
+
+        <!-- STANDARD -->
+        <div class="col-md-4 mb-4">
+            <div class="price-card featured text-center p-4">
+                <h3>Standard</h3>
+                <h2 class="my-3">350€</h2>
+
+                <p class="badge bg-warning text-dark">Recomandat</p>
+
+                <ul class="list-unstyled mt-2">
+                    <li>✔ Ședință foto 3 ore</li>
+                    <li>✔ 60 fotografii editate</li>
+                    <li>✔ 2 locații</li>
+                    <li>✔ Album digital</li>
+                    <li>✔ Livrare rapidă</li>
+                </ul>
+
+                <a href="#" class="btn btn-main mt-3" onclick="openModal('Standard')">
+                    Alege pachetul
+                </a>
+            </div>
+        </div>
+
+        <!-- PREMIUM -->
+        <div class="col-md-4 mb-4">
+            <div class="price-card text-center p-4">
+                <h3>Premium</h3>
+                <h2 class="my-3">700€</h2>
+
+                <ul class="list-unstyled">
+                    <li>✔ Acoperire completă eveniment</li>
+                    <li>✔ 150+ fotografii editate</li>
+                    <li>✔ Album premium tipărit</li>
+                    <li>✔ Video highlights</li>
+                    <li>✔ Prioritate livrare</li>
+                </ul>
+
+                <a href="#" class="btn btn-outline-light mt-3" onclick="openModal('Premium')">
+                    Alege pachetul
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="container text-center py-5 bg-black">
+    <h2>Vrei o ofertă personalizată?</h2>
+    <p>Spune-mi detaliile evenimentului tău și îți răspund rapid</p>
+    <a href="contact.html" class="btn btn-main mt-2">Contactează-mă</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container text-center">
+        <h5>Pixel Art Photography</h5>
+        <p>Fotografie profesională pentru momente importante</p>
+        <p>© 2026 Toate drepturile rezervate</p>
+    </div>
+</footer>
+
+<!-- MODAL -->
+<div id="orderModal" class="modal-custom">
+    <div class="modal-box">
+
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+
+        <h2>Comandă pachet</h2>
+
+        <p id="selectedPackage">Pachet:</p>
+
+        <form>
+            <input type="text" placeholder="Numele tău" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Detalii eveniment"></textarea>
+
+            <button type="submit">Trimite cererea</button>
+        </form>
+
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./js/main.js"></script>
+
+</body>
+</html>
