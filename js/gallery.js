@@ -1,12 +1,8 @@
-/* =========================
-   SIMPLE LIGHTBOX GALLERY
-========================= */
 
 const images = document.querySelectorAll(".portfolio-img, .img-fluid");
 
 let currentIndex = 0;
 
-/* Creăm lightbox-ul */
 const lightbox = document.createElement("div");
 lightbox.id = "lightbox";
 
@@ -24,9 +20,6 @@ const closeBtn = document.getElementById("closeBtn");
 const prevBtn = document.getElementById("prev");
 const nextBtn = document.getElementById("next");
 
-/* =========================
-   DESCHIDERE LIGHTBOX
-========================= */
 
 images.forEach((img, index) => {
     img.style.cursor = "pointer";
@@ -42,9 +35,6 @@ function openLightbox(src) {
     lightboxImg.src = src;
 }
 
-/* =========================
-   ÎNCHIDERE LIGHTBOX
-========================= */
 
 function closeLightbox() {
     lightbox.style.display = "none";

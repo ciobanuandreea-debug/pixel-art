@@ -1,6 +1,3 @@
-/* =========================
-   BACK TO TOP BUTTON
-========================= */
 
 const backToTopBtn = document.getElementById("backToTop");
 
@@ -25,9 +22,6 @@ if (backToTopBtn) {
 
 }
 
-/* =========================
-   SMOOTH SCROLL (ANCHORS)
-========================= */
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
@@ -46,9 +40,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 });
 
-/* =========================
-   NAVBAR SHRINK ON SCROLL
-========================= */
 
 const navbar = document.querySelector(".navbar");
 
@@ -69,9 +60,6 @@ if (navbar) {
 
 }
 
-/* =========================
-   ACTIVE LINK HIGHLIGHT
-========================= */
 
 const navLinks = document.querySelectorAll(".nav-link");
 
