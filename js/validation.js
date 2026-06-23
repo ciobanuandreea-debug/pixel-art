@@ -1,5 +1,4 @@
 
-
 const form = document.getElementById("contactForm");
 
 if (form) {
@@ -15,27 +14,23 @@ if (form) {
         const message = document.getElementById("message").value.trim();
 
         let errors = [];
-
      
         if (name.length < 3) {
             errors.push("Numele trebuie să aibă minim 3 caractere.");
         }
-
-     
+  
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
         if (!emailPattern.test(email)) {
             errors.push("Email invalid.");
         }
-
-    
+  
         const phonePattern = /^[0-9+\s]{6,15}$/;
 
         if (!phonePattern.test(phone)) {
             errors.push("Număr de telefon invalid.");
         }
-
-    
+ 
         if (event === "") {
             errors.push("Selectează tipul evenimentului.");
         }

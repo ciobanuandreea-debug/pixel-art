@@ -1,6 +1,4 @@
-/* =========================
-   FADE-IN ON SCROLL
-========================= */
+
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -16,9 +14,6 @@ hiddenElements.forEach(el => {
     observer.observe(el);
 });
 
-/* =========================
-   COUNTER ANIMATION (ABOUT PAGE)
-========================= */
 
 const counters = document.querySelectorAll(".counter");
 
@@ -47,11 +42,8 @@ if (counters.length > 0) {
     runCounters();
 }
 
-/* =========================
-   SCROLL REVEAL CLASSES
-========================= */
 
-/* Adaugă stiluri dinamice */
+
 const style = document.createElement("style");
 
 style.innerHTML = `
@@ -68,8 +60,6 @@ style.innerHTML = `
 `;
 
 document.head.appendChild(style);
-
-
 
 window.addEventListener("load", () => {
     const heroText = document.querySelector(".hero div");

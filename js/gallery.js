@@ -54,10 +54,6 @@ document.addEventListener("keydown", (e) => {
     }
 });
 
-/* =========================
-   NAVIGARE NEXT / PREV
-========================= */
-
 function showImage(index) {
     if (index < 0) {
         index = images.length - 1;
