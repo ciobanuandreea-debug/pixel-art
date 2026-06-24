@@ -88,3 +88,19 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+document.addEventListener("DOMContentLoaded", function () {
+
+    const form = document.getElementById("orderForm");
+
+    if (form) {
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            alert("Cererea a fost trimisă cu succes! Vă vom contacta în curând.");
+
+            form.reset();
+            closeModal();
+        });
+    }
+
+});
